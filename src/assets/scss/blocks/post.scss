@@ -1,0 +1,183 @@
+.post {
+  overflow: hidden;
+  margin-bottom: 3rem;
+  padding: 2.5rem 2.8rem;
+  background: $primary;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+}
+
+.post__header {
+  margin: 0 0 2.5rem;
+
+  &--prewiev {
+    margin: -2.5rem -2.8rem 2.5rem;
+  }
+}
+.post__content {
+  margin-bottom: 2rem;
+}
+
+.post__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: $white;
+  font-weight: 500;
+
+  &--mb0 {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.post__desription {
+  font-size: 1.4rem;
+  color: #d2d2d2;
+}
+
+.post__text {
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  color: $white;
+  border-bottom: 1px solid #1c1c1c;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  a {
+    color: $blue;
+    text-decoration: underline;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-size: 1.15em;
+  }
+
+  h5,
+  h6 {
+    font-size: 1em;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 2rem;
+  }
+
+  ol {
+    list-style: decimal; // нумерация списка
+    list-style-position: inside; // цифры внутри элемента
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  table {
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.post__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post__footer-btn {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: $blue;
+  transition: font-size 0.2s linear;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.post__data {
+  display: flex;
+  color: #828282;
+  line-height: 1.2rem;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.post__data-item {
+  &:not(:last-child):after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 1.5rem;
+    position: relative;
+    top: -2px;
+
+    border-radius: 50%;
+    background-color: #c4c4c4;
+  }
+}
+
+.post__prewiev {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.post__actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: $white;
+
+  a {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 0.2s linear;
+
+    &:hover {
+      text-decoration: underline;
+      opacity: 1;
+    }
+  }
+}
+
+.post__actions-icon {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,45 @@
+.related {
+  border-bottom: 1px solid #1c1c1c;
+  padding: 3rem 0;
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $white;
+
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 50%;
+      margin-bottom: 2.5rem;
+    }
+
+    &-date {
+      color: #828282;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.related__list-title {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #f3eba2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
